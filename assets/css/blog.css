@@ -1,12 +1,36 @@
 header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: end;
 }
 
 header h1 {
-    flex: auto;
+    flex: 1
 }
 
-header hr {
-    flex-basis: 100%;
+#back {
+    margin: 10px;
+}
+
+.blog {
+    border-style: solid;
+    border: 1;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.fade {
+    color: grey;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
 }
