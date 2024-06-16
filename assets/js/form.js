@@ -3,15 +3,22 @@ const titleText = document.querySelector('#title');
 const contentText = document.querySelector('#content');
 const authorText = document.querySelector('#author');
 
-submitButton.addEventListener('click', function () {
-    console.log("submitButton clicked");
+submitButton.addEventListener('click', function() {
+    if (titleText.value != "" && contentText.value != "" && authorText.value != "") {
+        let posts = JSON.parse(localStorage.getItem("posts") || "[]"); // get posts from storage or make an empty array
 
-    const blogPost = {
-        title: titleText.value,
-        content: contentText.value,
-        author: authorText.value,
-    };
-
-    localStorage.setItem('blogPost', JSON.stringify(blogPost));
-    console.log(localStorage.blogPost);
+        const blogPost = {
+            title: titleText.value,
+            content: contentText.value,
+            author: authorText.value,
+        };
+        posts.push(blogPost);
+    
+        localStorage.setItem('posts', JSON.stringify(posts));
+        console.log(localStorage.getItem('posts'));
+    }
+    else {
+        alert("Please fill out all text boxes!");
+    }
+    //window.location.assign("file:///C:/Users/origi/bootcamp/FSF-Challenge-4/blog.html");
 });
