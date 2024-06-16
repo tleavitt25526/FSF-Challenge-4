@@ -1,4 +1,9 @@
 const blogContainer = document.querySelector('#blog-container');
+const backButton = document.querySelector('#back');
+
+backButton.addEventListener('click', function() {
+    window.location.assign("file:///C:/Users/origi/bootcamp/FSF-Challenge-4/index.html");
+});
 
 function renderPosts() {
     const posts = JSON.parse(localStorage.getItem('posts'));

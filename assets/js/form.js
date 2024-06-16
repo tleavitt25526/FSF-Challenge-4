@@ -17,6 +17,10 @@ submitButton.addEventListener('click', function() {
         localStorage.setItem('posts', JSON.stringify(posts));
         console.log(localStorage.getItem('posts'));
 
+        titleText.value = "";
+        contentText.value = "";
+        authorText.value = "";
+
         window.location.assign("file:///C:/Users/origi/bootcamp/FSF-Challenge-4/blog.html");
     }
     else {
