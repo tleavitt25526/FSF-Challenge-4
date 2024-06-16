@@ -1,0 +1,21 @@
+.dark {
+    background-color:#243447;
+    height: 100vh;
+    color: white;
+    margin: 0;
+}
+
+.dark input {
+    background-color: slategrey;
+}
+
+.light {
+    background-color: white;
+    height: 100vh;
+    color: black;
+    margin: 0;
+}
+
+.light input {
+    background-color: white;
+}
