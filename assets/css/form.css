@@ -1,0 +1,23 @@
+input {
+    text-align: left;
+    text-wrap: wrap;
+    
+}
+
+input#content{
+    width: 100vh;
+    height: 50vh;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    flex: auto;
+}
+
+header hr {
+    flex-basis: 100%;
+}
