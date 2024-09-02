@@ -21,7 +21,7 @@ submitButton.addEventListener('click', function() {
         contentText.value = "";
         authorText.value = "";
 
-        window.location.href='./blog.html'
+        window.location.href= 'blog.html'
     }
     else {
         alert("Please fill out all text boxes!");

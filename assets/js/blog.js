@@ -2,7 +2,7 @@ const blogContainer = document.querySelector('#blog-container');
 const backButton = document.querySelector('#back');
 
 backButton.addEventListener('click', function() {
-    window.location.href = './index.html';
+    window.location.href = 'index.html';
 });
 
 function renderPosts() {
