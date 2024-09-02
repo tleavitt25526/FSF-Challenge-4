@@ -21,7 +21,7 @@ submitButton.addEventListener('click', function() {
         contentText.value = "";
         authorText.value = "";
 
-        window.location.assign("file:///C:/Users/origi/bootcamp/FSF-Challenge-4/blog.html");
+        window.location.href='./blog.html'
     }
     else {
         alert("Please fill out all text boxes!");
